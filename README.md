@@ -59,7 +59,7 @@ Inkstract is a small Python tool that goes through all the ZIP archives in a fol
 ## 📖 Usage
 
 ```bash
-./extract_flat.py [OPTIONS] <zip_folder> <output_folder>
+./inkstract.py [OPTIONS] <zip_folder> <output_folder>
 ```
 
 | Option            | What it does                                      |
@@ -75,27 +75,27 @@ Inkstract is a small Python tool that goes through all the ZIP archives in a fol
 
 1. **Extract everything** from `zips/` into `out/`:
    ```bash
-   ./extract_flat.py zips/ out/
+   ./inkstract.py zips/ out/
    ```
 
 2. **Only pull images** (`.jpg` & `.png`):
    ```bash
-   ./extract_flat.py -e .jpg,.png zips/ out/
+   ./inkstract.py -e .jpg,.png zips/ out/
    ```
 
 3. **Dry run** to see what would happen:
    ```bash
-   ./extract_flat.py --dry-run zips/ out/
+   ./inkstract.py --dry-run zips/ out/
    ```
 
 4. **Recursive** search + verbose output:
    ```bash
-   ./extract_flat.py -r -v zips/ out/
+   ./inkstract.py -r -v zips/ out/
    ```
 
 5. **Using glob patterns** instead of extensions:
    ```bash
-   ./extract_flat.py -p '*.docx,*.pdf' zips/ out/
+   ./inkstract.py -p '*.docx,*.pdf' zips/ out/
    ```
 
 ---
@@ -110,17 +110,7 @@ Inkstract is a small Python tool that goes through all the ZIP archives in a fol
 
 - **No files extracted?**  
   • Make sure your ZIP folder path is correct.  
-  • If you used `-e/--exts` or `-p/--patterns`, double-check your filters.
-
----
-
-## 🤝 Contributing
-
-1. Fork the repo  
-2. Create a new branch (`git checkout -b feature/my-cool-thing`)  
-3. Commit your changes (`git commit -m "Add fancy new feature"`)  
-4. Push to your branch (`git push origin feature/my-cool-thing`)  
-5. Open a Pull Request  
+  • If you used `-e/--exts` or `-p/--patterns`, double-check your filters.  
 
 ---
 
@@ -130,4 +120,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Happy extracting! 🦑✨
+Happy inkstracting! 🦑✨
