@@ -1,8 +1,6 @@
 # Inkstract
 
-**Flatten and extract ZIP files with inky precision.**
-
-Inkstract is a small Python tool that goes through all the ZIP archives in a folder and pulls every file (or just the ones you want) into a single output folder. It makes sure filenames are safe, handles duplicates, and logs any errors.
+Inkstract is a small Python tool that goes through all the ZIP archives in a folder (and sub-folders) and pulls every file (or just the ones you want) into a single output folder. It makes sure filenames are safe, handles duplicates, and logs any errors.
 
 ---
 
